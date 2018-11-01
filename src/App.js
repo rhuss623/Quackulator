@@ -132,40 +132,4 @@ componentWillUnmount() {
   }
 }
 
-// class ResponsiveText extends Component {
-//   state = ({
-//     textScale: 1
-//   })
-//   componentDidUpdate(){
-//     const node = this.node,
-//     { textScale } = this.state,
-//     { offsetWidth } = node.offsetWidth,
-//     displayWidth = node.offsetParent.offsetWidth; //destructuring
-    
-//     const ratio = offsetWidth / displayWidth; //the text width (in display) divided by the total display width
-
-//     if (ratio===textScale){
-//       return
-//     }; //if the textScale is the same as ratio, no change to state is needed
-//     if (ratio > 1) {
-//       this.setState({
-//         textScale: 1/ratio
-//       }) //if the display width is smaller than text width, the textScale will shrink
-//     } 
-//     else if (ratio < 1) {
-//       this.setState({
-//         textScale: 1
-//       }) //if numbers are removed and the ratio becomes less than 1, the textScale needs to be returned to 1
-//     }
-//   }
-//   render(){
-//     return(
-//       <div 
-//       {...this.props}
-//       style = {font-size: {40*textScale} //this sets the x and y parameters of transform to the new textScale
-//       ref={ node => this.node = node}>{ this.props.children }</div>
-//     )
-//   }
-// }
-
 export default App;
