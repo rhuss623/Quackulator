@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ScaleText from "react-scale-text";
 
 const NumberButtons = [
   {id: "one", number: 1},

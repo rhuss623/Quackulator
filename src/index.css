@@ -40,6 +40,8 @@ code {
   grid-template-rows: 100px;
   border-radius: 5px;
   overflow: scroll;
+  background-color: #DAD2D8;
+  border-style: inset;
 }
 .Numbers {
   margin: auto;
@@ -60,11 +62,9 @@ code {
   grid-template-columns: 400px;
 }
 #display {
-  background-color: #DAD2D8;
-  border-style: inset;
   font-size: 70px;
   text-align: right;
-  min-width: 400px;
+  width: 400px;
 }
 #equals {
   border-radius: 25px;
