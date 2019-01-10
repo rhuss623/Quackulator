@@ -109,24 +109,24 @@ componentWillUnmount() {
 }
   render() {
     return (
-      <div className="App container">
-      <div className="Outer-grid container">
-        <div className="Display container">
-        <span id="display">{this.state.display}</span>
-        </div>
-          <div className="Numbers container">
-            {NumberButtons.map( x => <button className="number-button z-depth-1" id={x.id} onClick={() => this.numberInput(x.number)} >{x.number}</button>)}
-            <button className= "z-depth-1" id="decimal" onClick={this.decimalInput}>.</button>
-            <button className="z-depth-1" id="clear" onClick={this.clearInput}>Clear</button>
-            {OperatorButtons.map( y => <button className="operator-button z-depth-1" id={y.id} onClick={() => this.operatorInput(y.operator)}>{y.sign}</button>)}
+        <div className="App container">
+        <div className="Outer-grid container">
+          <div className="Display container">
+          <span id="display">{this.state.display}</span>
           </div>
-          <div className="Equals container">
-            <button id="equals" className="z-depth-1" src="http://s1download-universal-soundbank.com/mp3/sounds/146.mp3" onClick={this.performEquation}>=</button>
-            <audio className="clip" id ={this.props.letter} src="http://s1download-universal-soundbank.com/mp3/sounds/147.mp3" ref={ref => this.audio = ref}/>
+            <div className="Numbers container">
+              {NumberButtons.map( x => <button className="number-button z-depth-1" id={x.id} onClick={() => this.numberInput(x.number)} >{x.number}</button>)}
+              <button className= "z-depth-1" id="decimal" onClick={this.decimalInput}>.</button>
+              <button className="z-depth-1" id="clear" onClick={this.clearInput}>Clear</button>
+              {OperatorButtons.map( y => <button className="operator-button z-depth-1" id={y.id} onClick={() => this.operatorInput(y.operator)}>{y.sign}</button>)}
+            </div>
+            <div className="Equals container">
+              <button id="equals" className="z-depth-1" src="http://s1download-universal-soundbank.com/mp3/sounds/146.mp3" onClick={this.performEquation}>=</button>
+              <audio className="clip" id ={this.props.letter} src="http://s1download-universal-soundbank.com/mp3/sounds/147.mp3" ref={ref => this.audio = ref}/>
+            </div>
           </div>
+          <p>The Quackulator. Code by Ryan Hussey</p>
         </div>
-        <p>The Quackulator. Code by Ryan Hussey</p>
-      </div>
     );
   }
 }

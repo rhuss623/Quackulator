@@ -65,6 +65,7 @@ code {
   font-size: 70px;
   text-align: right;
   width: 400px;
+  margin-left: -10px;
 }
 #equals {
   border-radius: 25px;
@@ -83,33 +84,47 @@ p {
   text-align: center;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 415px) {
   .App {
-    padding: 1px;
-    background-color: rgba(245, 245, 245,0)
+    padding: 0;
+    background-color: rgba(245, 245, 245,0);
+    justify-content: center;
+    align-content: center;
+    margin: 0;
  } 
  .Outer-grid {
-   height: 400px;
-   width: 250px;
-   padding: 25px;
+   height: 150vw;
+   width: 100vw;
+   padding-top: 25px;
+   margin-top: 3vh;
  }
  .Display {
-   width: 200px;
+   min-width: 50vw;
+   width: 60vw;
    height: 75px;
    grid-template-columns: 200px;
    grid-template-rows: 100px;
  }
+ #display {
+  font-size: 70px;
+  text-align: right;
+  width: 60vw;
+  margin-left: -10px;
+}
  .Numbers {
-   width: 300px;
-   height: 200px;
-   grid-template-columns: repeat(4, 45px);
-   grid-template-rows: repeat(4, 45px);
+   width: 90vw;
+   height: 90vw;
+   grid-template-columns: repeat(4, 20vw);
+   grid-template-rows: repeat(4, 20vw);
  }
  .Equals {
-   width: 200px;
+   width: 100vw;
    height: 50px;
    grid-template-rows: 50px;
    grid-template-columns: 200px;
+ }
+ #equals {
+   width: 85vw;
  }
  #display {
    font-size: 50px;
@@ -119,5 +134,9 @@ p {
  }
  #clear {
    font-size: 13px;
+ }
+ p{
+   margin-left: 30vw;
+   margin-right: -15vw;
  }
 }
